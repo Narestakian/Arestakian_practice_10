@@ -10,6 +10,11 @@ public class AnnotationsAndStreamApi1 {
         List <String> listFiltered = stream.filter(item -> item.contains("e"))
                 .collect(Collectors.toList());
         System.out.println(listFiltered);
+        names.stream()
+                .filter(name -> name.contains("e"))
+                .forEach(System.out::println);
     }
+
 }
+
 
